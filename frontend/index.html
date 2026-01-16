@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">VIP Service Taxi</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚕</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="images/logo.jpg" alt="VIP Service Taxi Logo" class="logo-img" style="height: 50px; margin-right: 15px; display: inline-block; vertical-align: middle;">
+                <h1 class="logo">VIP SERVICE TAXI</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#vehicle" data-i18n="nav_vehicle">Our Vehicle</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#booking" data-i18n="nav_book">Book Now</a></li>
+                <li><a href="#reviews" data-i18n="nav_reviews">Reviews</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li class="language-selector">
+                    <button id="langBtn" class="lang-btn">EN ▼</button>
+                    <ul id="langMenu" class="lang-menu">
+                        <li><a href="#" data-lang="en">English</a></li>
+                        <li><a href="#" data-lang="fr">Français</a></li>
+                        <li><a href="#" data-lang="ar">العربية</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image-bg">
+            <img src="images/first image.png" alt="VIP Service Taxi" class="hero-background-image">
+        </div>
+        <div class="hero-content">
+            <h2 class="hero-title" data-i18n="tagline">Travel in Elegance</h2>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Experience luxury transportation with our Hyundai Staria 2025</p>
+            <a href="#booking" class="btn btn-primary" data-i18n="hero_cta">Book Your Ride</a>
+        </div>
+    </section>
+
+    <!-- Hero Tagline -->
+    <section class="tagline-section">
+        <h3 class="tagline" data-i18n="hero_excellence">EXCELLENCE IN EVERY JOURNEY</h3>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3 data-i18n="service_airport">Airport Transfers</h3>
+                    <p data-i18n="service_airport_desc">Seamless pickups and drop-offs at all major airports. Comfortable and punctual service.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-map"></i>
+                    <h3 data-i18n="service_tours">Multi-Day Tours</h3>
+                    <p data-i18n="service_tours_desc">Explore amazing destinations with our personalized multi-day tour packages.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3 data-i18n="service_group">Group Travel</h3>
+                    <p data-i18n="service_group_desc">Up to 8 passengers in comfort. Perfect for families and groups.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3 data-i18n="service_partners">Partner Network</h3>
+                    <p data-i18n="service_partners_desc">We work with trusted taxi partners to accommodate any group size.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Section -->
+    <section id="vehicle" class="vehicle">
+        <div class="container">
+            <div class="vehicle-content">
+                <div class="vehicle-image">
+                    <img src="images/car.png" alt="Hyundai Staria 2025" class="car-image">
+                </div>
+                <div class="vehicle-text">
+                    <h3 class="vehicle-tag" data-i18n="vehicle_subtitle">PREMIUM COMFORT FOR YOUR JOURNEY</h3>
+                    <h2 data-i18n="vehicle_title">Our Vehicle</h2>
+                    <h3 class="vehicle-model" data-i18n="vehicle_model">Hyundai Staria 2025</h3>
+                    <div class="vehicle-info">
+                        <p class="passenger-count"><i class="fas fa-users"></i> <span data-i18n="vehicle_passengers">8 Passengers</span></p>
+                    </div>
+                    <div class="vehicle-features">
+                        <div class="feature">
+                            <i class="fas fa-compress"></i>
+                            <span>Spacious Interior</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Air Conditioning</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-usb"></i>
+                            <span>USB Charging</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-box"></i>
+                            <span>Luggage Space</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chair"></i>
+                            <span>Comfortable Seating</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-window-maximize"></i>
+                            <span>Panoramic Windows</span>
+                        </div>
+                    </div>
+                    <p class="vehicle-note" data-i18n="vehicle_more">Need more vehicles? We work with trusted taxi partners to accommodate larger groups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h3 class="gallery-tag" data-i18n="gallery_subtitle">MEMORIES FROM PREVIOUS ADVENTURES</h3>
+            <h2 class="section-title" data-i18n="gallery_title">Our Tours & Experiences</h2>
+        </div>
+        <div class="carousel">
+                <button class="carousel-btn prev" id="prevBtn" data-i18n="prev_slide">←</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="images/IMG_0411.JPG" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_0715.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_0744.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_0749.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_1020.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_1024.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_1046.jpg" alt="Tunisia tour experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/IMG_1047.jpg" alt="Tunisia tour experience">
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn" data-i18n="next_slide">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h3 class="booking-tag" data-i18n="booking_subtitle">RESERVE YOUR PREMIUM TRANSPORTATION</h3>
+            <h2 class="section-title" data-i18n="booking_title">Book Your Journey</h2>
+            
+            <div class="booking-form-container">
+                <!-- 
+                    GOOGLE FORMS SETUP:
+                    Form URL: https://docs.google.com/forms/d/e/1FAIpQLSe8kLOdaRG_78Iomj_khBPYHk4niPuO4qcdO-v_g96TCLktgw/viewform
+                    
+                    TO GET ENTRY IDs:
+                    1. Open the form in your browser
+                    2. Right-click on the first field (Name) → Inspect Element
+                    3. In the HTML, find the <input> or <select> tag
+                    4. Look for name="entry.XXXXXXXXX" - this is the entry ID
+                    5. Repeat for each field and update the name attributes below
+                    
+                    Current field order in form:
+                    - Name
+                    - Email  
+                    - Phone
+                    - Service Type
+                    - Travel Date
+                    - Number of Passengers
+                    - Number of Luggage
+                    - Pickup Location
+                    - Destination
+                    - Special Requests
+                -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                <form class="booking-form" id="bookingForm" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSe8kLOdaRG_78Iomj_khBPYHk4niPuO4qcdO-v_g96TCLktgw/formResponse" target="hidden_iframe">
+                    
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="entry.1244685198" autocomplete="name" placeholder="Your full name" required data-placeholder-i18n="form_name_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="entry.1105933673" autocomplete="email" placeholder="your@email.com" required data-placeholder-i18n="form_email_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form_phone">Phone</label>
+                        <input type="tel" id="phone" name="entry.1720792458" autocomplete="tel" placeholder="+1 (555) 000-0000" required data-placeholder-i18n="form_phone_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service_type" data-i18n="form_service_type">Service Type</label>
+                        <select id="service_type" name="entry.1135974469" required>
+                            <option value="">Select...</option>
+                            <option value="Airport Transfer" data-i18n="service_airport">Airport Transfer</option>
+                            <option value="Multi-Day Tour" data-i18n="service_tours">Multi-Day Tour</option>
+                            <option value="Tour" data-i18n="service_tour">Tour</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" data-i18n="form_date">Travel Date</label>
+                        <input type="date" id="date" name="entry.1757328894" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passengers" data-i18n="form_passengers">Number of Passengers</label>
+                        <select id="passengers" name="entry.34176910" required>
+                            <option value="">Select...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="8+">8+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="luggage" data-i18n="form_luggage">Number of Luggage</label>
+                        <input type="number" id="luggage" name="entry.1230324225" placeholder="0" min="0" required data-placeholder-i18n="form_luggage_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickup" data-i18n="form_pickup">Pickup Location</label>
+                        <input type="text" id="pickup" name="entry.55618107" placeholder="Where should we pick you up?" required data-placeholder-i18n="form_pickup_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination" data-i18n="form_destination">Destination</label>
+                        <input type="text" id="destination" name="entry.697543864" placeholder="Where would you like to go?" required data-placeholder-i18n="form_destination_placeholder">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="requests" data-i18n="form_requests">Special Requests</label>
+                        <textarea id="requests" name="entry.2004370144" rows="4" placeholder="Any special preferences or requirements?" data-placeholder-i18n="form_requests_placeholder"></textarea>
+                    </div>
+
+                    <p class="form-required" data-i18n="form_required">* Required fields</p>
+                    <button type="submit" class="btn btn-primary btn-submit" data-i18n="form_submit">Send Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Section -->
+    <section class="availability">
+        <h3 data-i18n="availability">AVAILABLE 24 HOURS A DAY, 7 DAYS A WEEK</h3>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-main">
+        <div class="container">
+            <h3 class="reviews-tag" data-i18n="reviews_subtitle">WHAT OUR CLIENTS SAY</h3>
+            <h2 class="section-title" data-i18n="reviews_title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_1_text">"We've had a great 7 days with brother Mehdi, became like family. Fabulous service, English speaking, knowledgeable. Will definitely recommend him to family and friends who come to Tunisia."</p>
+                    <p class="review-author" data-i18n="review_1_author">- Noorjahan Khatun</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_2_text">"Amazing service and perfect at all levels Thank you very much for the great hospitality."</p>
+                    <p class="review-author" data-i18n="review_2_author">- Yeganeh Far</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text" data-i18n="review_3_text">"Mehdi has so much passion as a tour guide. He is a professional, kind and caring man. I highly recommend VIP Taxi Service. I have travelled to numerous countries and never seen somebody so accommodating and passionate with his work. Thank you Mehdi for the lovely journey in Tunisia you made our stay extra special. A bond with a stranger became family ❤️."</p>
+                    <p class="review-author" data-i18n="review_3_author">- Ridwaan Sirkhot</p>
+                </div>
+            </div>
+            <div class="reviews-cta">
+                <a href="https://www.google.com/search?q=VIP+Service+Taxi+Monastir" target="_blank" class="btn btn-primary" data-i18n="reviews_google">Read More Reviews on Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3 data-i18n="contact_phone">Phone</h3>
+                    <a href="tel:+21628356710">+216 28356710</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3 data-i18n="contact_email">Email</h3>
+                    <a href="mailto:VIPserviceTaxi.tn@gmail.com">VIPserviceTaxi.tn@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3 data-i18n="contact_whatsapp">WhatsApp</h3>
+                    <a href="https://wa.me/21628356710" target="_blank">+216 28356710</a>
+                </div>
+                <div class="contact-card address-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-i18n="contact_address">Address</h3>
+                    <p data-i18n="contact_address_text">Monastir, Tunisia</p>
+                </div>
+            </div>
+
+            <div class="contact-message">
+                <p data-i18n="contact_message">Do not hesitate to contact us for any question or request.</p>
+            </div>
+
+            <div class="social-section">
+                <h3 data-i18n="contact_follow">Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vip_service_taxi/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100063577115231&sk=about" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ben-ali-mehdi-85b3b86b/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <h3 data-i18n="contact_reviews">Our Reviews</h3>
+                <div class="reviews-links">
+                    <a href="https://www.google.com/search?q=VIP+Service+Taxi+Monastir" target="_blank" class="review-card">
+                        <i class="fab fa-google"></i>
+                        <span data-i18n="google_reviews">Google Reviews</span>
+                    </a>
+                    <a href="https://www.tripadvisor.fr/Attraction_Review-g297949-d33987240-Reviews-VIP_SERVICE_TAXI-Monastir_Monastir_Governorate.html" target="_blank" class="review-card">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="tripadvisor_reviews">TripAdvisor</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>VIP SERVICE TAXI</h3>
+                    <p data-i18n="footer_tagline">Luxury Transportation Excellence</p>
+                </div>
+            </div>
+            <p class="footer-copyright" data-i18n="footer_copyright">© 2026 VIP SERVICE TAXI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
