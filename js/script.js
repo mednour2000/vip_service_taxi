@@ -115,48 +115,68 @@ const bookingForm = document.getElementById('bookingForm');
 const hiddenIframe = document.getElementById('hidden_iframe');
 
 if (bookingForm) {
+    let formSubmitted = false;
+
     // Handle iframe load (successful submission)
     if (hiddenIframe) {
-        hiddenIframe.addEventListener('load', function() {
-            if (this.src && this.src !== 'about:blank') {
+        hiddenIframe.addEventListener('load', function () {
+            if (formSubmitted) {
                 // Show success message
                 const successMsg = window.i18n ? window.i18n.t('form_success') : 'Booking request sent successfully! We will contact you soon.';
                 alert(successMsg);
+
                 // Reset form
                 bookingForm.reset();
-                this.src = 'about:blank';
+
+                // Reset button state
+                const submitBtn = bookingForm.querySelector('.btn-submit');
+                if (submitBtn) {
+                    submitBtn.textContent = window.i18n ? window.i18n.t('form_submit') : 'Send Booking Request';
+                    submitBtn.disabled = false;
+                }
+
+                formSubmitted = false;
             }
         });
     }
 
-    bookingForm.addEventListener('submit', function(e) {
+    bookingForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Validate form
         if (!validateForm()) {
             return false;
         }
-        
+
         // Check if Google Form URL is configured
         const action = this.getAttribute('action');
         if (!action || action === 'YOUR_GOOGLE_FORM_URL_HERE') {
             alert('Please configure your Google Form URL in the HTML file. See the comment in the booking form section.');
             return false;
         }
-        
+
         // Show loading message
         const submitBtn = this.querySelector('.btn-submit');
         if (submitBtn) {
-            const originalText = submitBtn.textContent;
             submitBtn.textContent = window.i18n ? window.i18n.t('form_sending') : 'Sending...';
             submitBtn.disabled = true;
         }
-        
+
+        // Mark that form is being submitted
+        formSubmitted = true;
+
         // Submit to Google Forms using iframe method
         // The form will submit normally and the iframe will handle the response
+        this.submit();
+
+        // Fallback: Reset button after 3 seconds in case iframe doesn't trigger
         setTimeout(() => {
-            this.submit();
-        }, 100);
+            if (formSubmitted && submitBtn) {
+                submitBtn.textContent = window.i18n ? window.i18n.t('form_submit') : 'Send Booking Request';
+                submitBtn.disabled = false;
+                formSubmitted = false;
+            }
+        }, 3000);
     });
 }
 
@@ -188,7 +208,7 @@ function validateForm() {
 // Add form validation to submit button
 const submitBtn = document.querySelector('.btn-submit');
 if (submitBtn) {
-    submitBtn.addEventListener('click', function(e) {
+    submitBtn.addEventListener('click', function (e) {
         if (!validateForm()) {
             e.preventDefault();
         }
