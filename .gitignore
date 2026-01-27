@@ -1,0 +1,166 @@
+# VIP Service Taxi - .gitignore
+
+# ============================================
+# Documentation & Planning Files (Not for Production)
+# ============================================
+
+# SEO Planning & Research Documents
+seo_plan.md
+keyword_research.md
+implementation_plan.md
+search_console_setup.md
+meta_tags_optimization.md
+walkthrough.md
+task.md
+
+# Any markdown files in root (documentation)
+*.md
+
+# ============================================
+# Development & IDE Files
+# ============================================
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# JetBrains IDEs (WebStorm, PhpStorm, etc.)
+.idea/
+.idea/*
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# Temporary & Cache Files
+# ============================================
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ============================================
+# Node.js (if you add build tools later)
+# ============================================
+
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# ============================================
+# Python (for local server)
+# ============================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================
+# Backup & Archive Files
+# ============================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ============================================
+# Image Optimization Originals
+# ============================================
+
+# Keep originals of images before compression
+images/originals/
+images/*.original.*
+
+# ============================================
+# Google Verification Files (Keep in Git)
+# ============================================
+
+# DO NOT ignore these - they're needed for verification
+# !google*.html
+# !BingSiteAuth.xml
+
+# ============================================
+# Environment & Configuration (if added later)
+# ============================================
+
+.env
+.env.local
+.env.*.local
+config.local.js
+
+# ============================================
+# Testing & Coverage (if added later)
+# ============================================
+
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# ============================================
+# Build Output (if you add build process later)
+# ============================================
+
+dist/
+build/
+out/
+.cache/
+
+# ============================================
+# IMPORTANT: Files to KEEP in Git
+# ============================================
+
+# These files MUST be committed:
+# - index.html
+# - css/styles.css
+# - js/script.js
+# - js/i18n.js
+# - lang/*.json
+# - images/* (all images)
+# - sitemap.xml
+# - robots.txt
+# - favicon files
+# - Any Google/Bing verification files
